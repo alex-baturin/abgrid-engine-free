@@ -1,0 +1,82 @@
+/* =============================================
+ 
+			ABGrid Theme: Blue Light
+
+   ============================================= */
+
+.abgrid,.abgrid-dialog,.abgrid-edit-dialog, .abgrid-toast-host {
+  /* Основные цвета (светлая гамма) */
+  --abgrid-bg-primary: #f8fafc;
+  --abgrid-bg-secondary: #f1f5f9;
+  --abgrid-bg-tertiary: #e2e8f0; /* важно для sticky header */
+
+  --abgrid-border: #cbd5e1;
+  --abgrid-border-light: #e2e8f0;
+
+  --abgrid-text-primary: #1e293b;
+  --abgrid-text-secondary: #475569;
+  --abgrid-text-disabled: #94a3b8;
+
+  --abgrid-accent: #3b82f6;
+  --abgrid-accent-hover: #2563eb;
+  --abgrid-accent-shadow: rgba(59, 130, 246, 0.2);
+
+  /* если где-то используется */
+  --abgrid-checkbox-unchecked: var(--abgrid-bg-primary);
+
+  /* Статусные цвета */
+  --abgrid-success: #10b981;
+  --abgrid-warning: #fa0505;
+  --abgrid-error: #ef4444;
+  --abgrid-info: #3b82f6;
+
+  /* Фоны для статусов (очень светлые) */
+  --abgrid-success-bg: rgba(16, 185, 129, 0.08);
+  --abgrid-warning-bg: rgba(245, 158, 11, 0.08);
+  --abgrid-error-bg: rgba(239, 68, 68, 0.08);
+  --abgrid-info-bg: rgba(59, 130, 246, 0.08);
+
+  /* Тени и состояния */
+  --abgrid-shadow: rgba(100, 116, 139, 0.10);
+
+  /* ВАЖНО для sticky header: лучше без прозрачности */
+  --abgrid-hover: #e8eef8;   /* было rgba(...) */
+  --abgrid-active: #dfe7f3;  /* было rgba(...) */
+
+  /* Фон для выбранных строк */
+  --abgrid-selected-bg: rgba(59, 130, 246, 0.06);
+  --abgrid-selected-hover: rgba(59, 130, 246, 0.10);
+
+  /* Фон загрузки */
+  --abgrid-loading-bg: rgba(248, 250, 252, 0.95);
+
+  /* Звезды рейтинга */
+  --abgrid-star-color: #f59e0b;
+  --abgrid-star-hover: #f59e0b;
+
+  /* optional (если используешь в структуре) */
+  --abgrid-loading-border: var(--abgrid-border);
+  --abgrid-loading-shadow: rgba(100, 116, 139, 0.18);
+}
+
+/* ===== Theme cosmetics (разрешено): прогресс-бары ===== */
+.abgrid .abgrid-progress-low,
+.abgrid .abgrid-progress-low .abgrid-progress-fill {
+  background: linear-gradient(to right, #ef4444, #f97316);
+}
+
+.abgrid .abgrid-progress-medium,
+.abgrid .abgrid-progress-medium .abgrid-progress-fill {
+  background: linear-gradient(to right, #f97316, #eab308);
+}
+
+.abgrid .abgrid-progress-high,
+.abgrid .abgrid-progress-high .abgrid-progress-fill {
+  background: linear-gradient(to right, #10b981, #22c55e);
+}
+
+/* ===== Skin: тень без transform (чтобы не было дерганья/пересчёта) ===== */
+.abgrid .abgrid-toolbar .abgrid-button:hover,
+.abgrid .abgrid-pager .pg-button:hover:not(.abgrid-state-disabled) {
+  box-shadow: 0 1px 3px rgba(59, 130, 246, 0.2);
+}

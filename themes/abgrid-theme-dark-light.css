@@ -1,0 +1,66 @@
+/* =============================================
+ 
+			ABGrid Theme: Dark Light
+
+   ============================================= */
+
+.abgrid,.abgrid-dialog,.abgrid-edit-dialog, .abgrid-toast-host {
+  --abgrid-bg-primary: #2d3748;
+  --abgrid-bg-secondary: #4a5568;
+  --abgrid-bg-tertiary: #718096; /* обязательно непрозрачный */
+
+  --abgrid-border: #a0aec0;
+  --abgrid-border-light: #718096;
+
+  --abgrid-text-primary: #f7fafc;
+  --abgrid-text-secondary: #e2e8f0;
+  --abgrid-text-disabled: #a0aec0;
+
+  --abgrid-accent: #63b3ed;
+  --abgrid-accent-hover: #4299e1;
+  --abgrid-accent-shadow: rgba(99, 179, 237, 0.25);
+
+  --abgrid-success: #68d391;
+  --abgrid-warning: #fa0505;
+  --abgrid-error: #fc8181;
+  --abgrid-info: #63b3ed;
+
+  --abgrid-success-bg: rgba(104, 211, 145, 0.15);
+  --abgrid-warning-bg: rgba(246, 173, 85, 0.15);
+  --abgrid-error-bg: rgba(252, 129, 129, 0.15);
+  --abgrid-info-bg: rgba(99, 179, 237, 0.15);
+
+  --abgrid-shadow: rgba(0, 0, 0, 0.35);
+
+  /* непрозрачные состояния — safe для sticky */
+  --abgrid-hover: #3b4558;
+  --abgrid-active: #4a5568;
+
+  --abgrid-selected-bg: rgba(99, 179, 237, 0.15);
+  --abgrid-selected-hover: rgba(99, 179, 237, 0.22);
+
+  --abgrid-loading-bg: rgba(45, 55, 72, 0.95);
+
+  --abgrid-star-color: #f6ad55;
+  --abgrid-star-hover: #f6ad55;
+
+  /* optional (если используется структурой) */
+  --abgrid-loading-border: var(--abgrid-border);
+  --abgrid-loading-shadow: rgba(0, 0, 0, 0.45);
+}
+
+/* ===== Theme cosmetics (разрешено): прогресс-бары ===== */
+.abgrid .abgrid-progress-low,
+.abgrid .abgrid-progress-low .abgrid-progress-fill {
+  background: linear-gradient(to right, #fc8181, #f6ad55);
+}
+
+.abgrid .abgrid-progress-medium,
+.abgrid .abgrid-progress-medium .abgrid-progress-fill {
+  background: linear-gradient(to right, #f6ad55, #fbbf24);
+}
+
+.abgrid .abgrid-progress-high,
+.abgrid .abgrid-progress-high .abgrid-progress-fill {
+  background: linear-gradient(to right, #68d391, #48bb78);
+}

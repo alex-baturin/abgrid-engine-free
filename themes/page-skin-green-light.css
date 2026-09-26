@@ -1,0 +1,105 @@
+/* =============================================
+   Page Skin: Green Light
+   ============================================= */
+
+:root {
+  --page-bg: #a8d5aa;
+  --page-card: #ffffff;
+  --page-border: #a8d5aa;
+  --page-text: #1b3e1c;
+  --page-text-secondary: #2d5a2e;
+  --page-accent: #2e7d32;
+  --page-accent-hover:#34bb57;
+  --page-primary-color: #1a8836;     
+  --page-secondary-color: #70ac80;
+  --page-accent-color: #1abc9c;      
+  --page-light-bg: #d0ecd1;          
+  --page-text-dark: #2c3e50;         
+  --page-text-light: #ffffff;
+  --page-border-color: #bdc3c7;  
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--page-bg);
+  color: var(--page-text);
+  margin: 0;
+  padding: 4px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--page-text);
+  margin-top: 0;
+}
+
+h1 {
+  border-bottom: 2px solid var(--page-accent);
+  padding-bottom: 10px;
+}
+
+p { color: var(--page-text); }
+
+a { color: var(--page-accent); }
+a:hover { color: var(--page-accent-hover); }
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--page-card);
+  border: 1px solid var(--page-border);
+  border-radius: 4px;
+  color: var(--page-text);
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: var(--page-accent);
+  color: var(--page-accent);
+}
+
+.btn-primary {
+  background: var(--page-accent);
+  border-color: var(--page-accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--page-accent-hover);
+  border-color: var(--page-accent-hover);
+}
+
+input, select, textarea {
+  padding-left: 4px;
+  border: 1px solid var(--page-border);
+  border-radius: 4px;
+  background: var(--page-light-bg);
+  color: var(--page-text);
+  height:28px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--page-accent);
+}
+
+.card {
+  background: var(--page-card);
+  border: 1px solid var(--page-border);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+button{
+  background:var(--page-accent);
+  border:none;
+  color:var(--page-text);
+  border-radius:4px;
+  padding:8px 14px;
+}
+
+button:hover{
+  background:var(--page-accent-hover);
+  /* ---------- Toast notifications (ABGrid) ---------- */
+}

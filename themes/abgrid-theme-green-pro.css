@@ -1,0 +1,66 @@
+/* =============================================
+ 
+			ABGrid Theme: Green Pro (DARK)
+
+   ============================================= */
+
+.abgrid,.abgrid-dialog,.abgrid-edit-dialog, .abgrid-toast-host {
+  --abgrid-bg-primary: #0a100d;
+  --abgrid-bg-secondary: #1a1f1c;
+  --abgrid-bg-tertiary: #2a2f2c;
+
+  --abgrid-border: #3a3f3c;
+  --abgrid-border-light: #2a2f2c;
+
+  --abgrid-text-primary: #e8f5e8;
+  --abgrid-text-secondary: #a8b8a8;
+  --abgrid-text-disabled: #687868;
+
+  --abgrid-accent: #4ade80;
+  --abgrid-accent-hover: #86efac;
+  --abgrid-accent-shadow: rgba(74, 222, 128, 0.2);
+
+  /* Статусные цвета */
+  --abgrid-success: #22c55e;
+  --abgrid-warning: #fa0505;
+  --abgrid-error: #f87171;
+  --abgrid-info: #38bdf8;
+
+  /* Фоны для статусов */
+  --abgrid-success-bg: rgba(34, 197, 94, 0.1);
+  --abgrid-warning-bg: rgba(234, 179, 8, 0.1);
+  --abgrid-error-bg: rgba(248, 113, 113, 0.1);
+  --abgrid-info-bg: rgba(56, 189, 248, 0.1);
+
+  /* Тени и состояния */
+  --abgrid-shadow: rgba(0, 0, 0, 0.35);
+  --abgrid-hover: rgba(168, 184, 168, 0.1);
+  --abgrid-active: rgba(168, 184, 168, 0.2);
+
+  /* Выбранные строки */
+  --abgrid-selected-bg: rgba(74, 222, 128, 0.08);
+  --abgrid-selected-hover: rgba(74, 222, 128, 0.12);
+
+  /* Оверлей загрузки */
+  --abgrid-loading-bg: rgba(10, 16, 13, 0.9);
+
+  /* Звезды рейтинга */
+  --abgrid-star-color: #facc15;
+  --abgrid-star-hover: #facc15;
+}
+
+/* Косметика темы (не структура): прогресс-бары */
+.abgrid .abgrid-progress-low,
+.abgrid .abgrid-progress-low .abgrid-progress-fill {
+  background: linear-gradient(to right, #f87171, #fbbf24);
+}
+
+.abgrid .abgrid-progress-medium,
+.abgrid .abgrid-progress-medium .abgrid-progress-fill {
+  background: linear-gradient(to right, #fbbf24, #a3e635);
+}
+
+.abgrid .abgrid-progress-high,
+.abgrid .abgrid-progress-high .abgrid-progress-fill {
+  background: linear-gradient(to right, #22c55e, #4ade80);
+}

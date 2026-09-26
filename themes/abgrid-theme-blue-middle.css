@@ -1,0 +1,83 @@
+/* =============================================
+ 
+			ABGrid Theme: Blue Middle
+
+   ============================================= */
+
+.abgrid, .abgrid-dialog, .abgrid-edit-dialog, .abgrid-toast-host  {
+  --abgrid-bg-primary: #d1dbe8;
+  --abgrid-bg-secondary: #b8c7da;
+  --abgrid-bg-tertiary: #94a3b8;
+
+  --abgrid-border: #64748b;
+  --abgrid-border-light: #94a3b8;
+
+  --abgrid-text-primary: #1e293b;
+  --abgrid-text-secondary: #334155;
+  --abgrid-text-disabled: #64748b;
+
+  --abgrid-accent: #2c3e50;
+  --abgrid-accent-hover: #1e40af;
+  --abgrid-accent-shadow: rgba(29, 78, 216, 0.25);
+
+  --abgrid-success: #047857;
+  --abgrid-warning: #fa0505;
+  --abgrid-error: #b91c1c;
+  --abgrid-info: #1d4ed8;
+
+  --abgrid-success-bg: rgba(4, 120, 87, 0.15);
+  --abgrid-warning-bg: rgba(180, 83, 9, 0.15);
+  --abgrid-error-bg: rgba(185, 28, 28, 0.15);
+  --abgrid-info-bg: rgba(29, 78, 216, 0.15);
+
+  --abgrid-shadow: rgba(100, 116, 139, 0.25);
+  --abgrid-hover: rgba(100, 116, 139, 0.2);
+  --abgrid-active: rgba(100, 116, 139, 0.3);
+
+  --abgrid-selected-bg: rgba(29, 78, 216, 0.12);
+  --abgrid-selected-hover: rgba(29, 78, 216, 0.18);
+
+  --abgrid-loading-bg: rgb(209, 219, 232, 0.98);
+  --abgrid-loading-border: #94a3b8;
+  --abgrid-loading-shadow: rgba(0, 0, 0, 0.2);
+
+  --abgrid-star-color: #b45309;
+  --abgrid-star-hover: #b45309;
+}
+
+/* Optional cosmetics (как было) */
+.abgrid .abgrid-toolbar .abgrid-button:hover {
+  box-shadow: 0 2px 5px rgba(29, 78, 216, 0.2);
+  transform: translateY(-1px);
+}
+
+.abgrid .abgrid-pager .pg-button:hover:not(.abgrid-state-disabled) {
+  box-shadow: 0 2px 5px rgba(29, 78, 216, 0.2);
+  transform: translateY(-1px);
+}
+
+/* progress bars */
+.abgrid .abgrid-progress-low,
+.abgrid .abgrid-progress-low .abgrid-progress-fill {
+  background: linear-gradient(to right, #b91c1c, #b45309);
+}
+.abgrid .abgrid-progress-medium,
+.abgrid .abgrid-progress-medium .abgrid-progress-fill {
+  background: linear-gradient(to right, #b45309, #a16207);
+}
+.abgrid .abgrid-progress-high,
+.abgrid .abgrid-progress-high .abgrid-progress-fill {
+  background: linear-gradient(to right, #047857, #059669);
+}
+
+/* inputs feel */
+.abgrid .abgrid-pager .pg-selpage input,
+.abgrid .abgrid-pager .abgrid-select {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.abgrid .abgrid-pager .pg-selpage input:focus,
+.abgrid .abgrid-pager .abgrid-select:focus {
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15), inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}

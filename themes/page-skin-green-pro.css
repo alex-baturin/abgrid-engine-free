@@ -1,0 +1,99 @@
+/* =============================================
+   Page Skin: Green Professional
+   ============================================= */
+
+:root {
+  --page-bg: #1a1f1c;
+  --page-card: #f0f8f0;
+  --page-border: #b8d5b8;
+  --page-text: #e8f5e8;
+  --page-text-secondary: #2d562e;
+  --page-accent: #2c7d30;
+  --page-accent-hover: #216624;
+  --page-primary-color: #374d33;     
+  --page-secondary-color: #6c8972;     
+  --page-accent-color: #1abc9c;      
+  --page-light-bg: #2a312c;        
+  --page-text-dark: #2c3e50;         
+  --page-text-light: #ffffff;        
+  --page-border-color: #bdc3c7; 
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--page-bg);
+  color: var(--page-text);
+  margin: 0;
+  padding: 4px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--page-text);
+  margin-top: 0;
+}
+
+h1 {
+  border-bottom: 2px solid var(--page-accent);
+  padding-bottom: 10px;
+}
+
+p { color: var(--page-text); }
+
+a {
+  color: var(--page-accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--page-accent-hover);
+  text-decoration: underline;
+}
+
+.card, .container, .panel {
+  background: var(--page-card);
+  border: 1px solid var(--page-border);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #fff;
+  border: 1px solid var(--page-border);
+  border-radius: 8px;
+  color: var(--page-text);
+  cursor: pointer;
+}
+.btn:hover {
+  border-color: var(--page-accent);
+  color: var(--page-accent);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.btn-primary {
+  background: var(--page-accent);
+  border-color: var(--page-accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--page-accent-hover);
+  border-color: var(--page-accent-hover);
+}
+
+input, select, textarea {
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--page-border);
+  border-radius: 4px;
+  background: var(--page-light-bg);
+  color: var(--page-text);
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--page-accent);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.10);
+}

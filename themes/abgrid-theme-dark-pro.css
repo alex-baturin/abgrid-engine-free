@@ -1,0 +1,109 @@
+/* =============================================
+ 
+			ABGrid Theme: Dark Pro (DARK)
+
+   ============================================= */
+
+.abgrid,.abgrid-dialog,.abgrid-edit-dialog, .abgrid-toast-host {
+  /* Основные цвета (профессиональная темная гамма) */
+  --abgrid-bg-primary: #1a1d21;
+  --abgrid-bg-secondary: #24292e;
+  --abgrid-bg-tertiary: #2d333b;
+
+  --abgrid-border: #444c56;
+  --abgrid-border-light: #373e47;
+
+  --abgrid-text-primary: #f0f6fc;
+  --abgrid-text-secondary: #8b949e;
+  --abgrid-text-disabled: #6e7681;
+
+  --abgrid-accent: #58a6ff;
+  --abgrid-accent-hover: #79c0ff;
+  --abgrid-accent-shadow: rgba(88, 166, 255, 0.25);
+
+  /* Статусные цвета */
+  --abgrid-success: #238636;
+  --abgrid-warning: #fa0505;
+  --abgrid-error: #f85149;
+  --abgrid-info: #58a6ff;
+
+  /* Фоны для статусов */
+  --abgrid-success-bg: rgba(35, 134, 54, 0.15);
+  --abgrid-warning-bg: rgba(210, 153, 34, 0.15);
+  --abgrid-error-bg: rgba(248, 81, 73, 0.15);
+  --abgrid-info-bg: rgba(88, 166, 255, 0.15);
+
+  /* Тени и состояния */
+  --abgrid-shadow: rgba(0, 0, 0, 0.4);
+
+  /* В legacy было rgba(177,186,196,...) — оставляю как есть */
+  --abgrid-hover: rgba(177, 186, 196, 0.12);
+  --abgrid-active: rgba(177, 186, 196, 0.2);
+
+  /* Фон для выбранных строк */
+  --abgrid-selected-bg: rgba(88, 166, 255, 0.12);
+  --abgrid-selected-hover: rgba(88, 166, 255, 0.18);
+
+  /* Фон загрузки (модальное окно) */
+  --abgrid-loading-bg: rgba(26, 29, 33, 0.98);
+  --abgrid-loading-border: #444c56;
+  --abgrid-loading-shadow: rgba(0, 0, 0, 0.4);
+
+  /* Звезды рейтинга */
+  --abgrid-star-color: #ffd700;
+  --abgrid-star-hover: #ffd700;
+}
+
+/* ============================================================
+   Theme cosmetics (разрешено):
+   - легкие тени/hover эффекты
+   - градиенты прогресс-баров
+   - улучшение внешнего вида инпутов/селектов
+   (без изменения геометрии/структуры)
+   ============================================================ */
+
+.abgrid .abgrid-toolbar .abgrid-button:hover {
+  box-shadow: 0 2px 5px rgba(88, 166, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.abgrid .abgrid-pager .pg-button:hover:not(.abgrid-state-disabled) {
+  box-shadow: 0 2px 5px rgba(88, 166, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Градиенты для прогресс-баров (скоупим внутрь темы) */
+.abgrid .abgrid-progress-low,
+.abgrid .abgrid-progress-low .abgrid-progress-fill {
+  background: linear-gradient(to right, #f85149, #db6d28);
+}
+
+.abgrid .abgrid-progress-medium,
+.abgrid .abgrid-progress-medium .abgrid-progress-fill {
+  background: linear-gradient(to right, #db6d28, #d29922);
+}
+
+.abgrid .abgrid-progress-high,
+.abgrid .abgrid-progress-high .abgrid-progress-fill {
+  background: linear-gradient(to right, #238636, #2ea043);
+}
+
+/* Улучшаем инпуты и селекты (скоупим внутрь темы) */
+.abgrid .abgrid-pager .pg-selpage input,
+.abgrid .abgrid-pager .abgrid-select {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.abgrid .abgrid-pager .pg-selpage input:focus,
+.abgrid .abgrid-pager .abgrid-select:focus {
+  box-shadow:
+    0 0 0 3px rgba(88, 166, 255, 0.2),
+    inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* boolean switch feel (если используешь эти классы) */
+.abgrid .abgrid-boolean-slider,
+.abgrid .abgrid-boolean-checkbox:checked + .abgrid-boolean-slider {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}

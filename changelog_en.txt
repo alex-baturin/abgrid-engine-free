@@ -1,0 +1,12 @@
+Version 1.0.0 FREE — September 26, 2026
+
+New Edition
+
+• Released ABGrid Engine FREE, the free edition of ABGrid Engine.
+• FREE uses the same basic Grid configuration format as Full.
+• Master–Detail in FREE supports one immediate detail grid with depth 1.
+• Summary values in FREE are calculated for the current page.
+• Sorting in FREE is limited to a single column.
+• FREE does not include Subgrid, TreeGrid, DetailsPanels, file uploads, or other advanced Full features.
+• Public toast/dialog UI mechanisms and binding autocomplete to arbitrary external inputs are reserved for Full; their internal use by Grid/EditForm remains available.
+• FREE has no artificial row or column limits and contains no watermark.
