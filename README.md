@@ -43,7 +43,7 @@ FREE не ограничивает количество строк или кол
 ### Vanilla JavaScript / UMD
 
 ```html
-<script src="/js/abgrid.min.js"></script>
+<script src="/js/abgrid-free.js"></script>
 <script>
   const grid = new ABGrid({...});
 </script>
@@ -135,7 +135,7 @@ The commercial Full edition extends FREE for more complex interfaces with featur
 ### Vanilla JavaScript / UMD
 
 ```html
-<script src="/js/abgrid.min.js"></script>
+<script src="/js/abgrid-free.js"></script>
 <script>
   const grid = new ABGrid({...});
 </script>
