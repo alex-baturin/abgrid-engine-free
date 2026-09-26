@@ -1,1 +1,2 @@
+dist/*.js linguist-language=JavaScript linguist-generated=false linguist-vendored=false
 *.css linguist-vendored
