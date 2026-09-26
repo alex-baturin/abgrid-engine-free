@@ -36,7 +36,7 @@ FREE не ограничивает количество строк или кол
 
 ## ABGrid Engine Full
 
-Коммерческая редакция Full расширяет FREE возможностями для более сложных интерфейсов, включая многоколоночную сортировку, расширенный Master–Detail, Subgrid, TreeGrid, DetailsPanels, загрузку файлов, глобальные итоги и дополнительные публичные UI-механизмы.
+Коммерческая редакция **[ABGrid Engine Full](https://abgrid.pro)** расширяет FREE возможностями для более сложных интерфейсов, включая многоколоночную сортировку, расширенный Master–Detail, Subgrid, TreeGrid, DetailsPanels, загрузку файлов, глобальные итоги и дополнительные публичные UI-механизмы.
 
 ## Подключение
 
@@ -128,7 +128,7 @@ FREE has no artificial row or column limits and adds no watermark.
 
 ## ABGrid Engine Full
 
-The commercial Full edition extends FREE for more complex interfaces with features including multi-column sorting, advanced Master–Detail, Subgrid, TreeGrid, DetailsPanels, file uploads, global summaries, and additional public UI mechanisms.
+The commercial Full edition **[ABGrid Engine Full](https://abgrid.pro)** extends FREE for more complex interfaces with features including multi-column sorting, advanced Master–Detail, Subgrid, TreeGrid, DetailsPanels, file uploads, global summaries, and additional public UI mechanisms.
 
 ## Usage
 
