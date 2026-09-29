@@ -28,7 +28,8 @@ FREE использует то же ядро и тот же подход к ко
 - Итоговые значения по текущей странице
 - HTTP/request API, interceptors и обработка 401
 - Индикатор загрузки Grid
-- Debug-проверки конфигурации
+- Dev-проверки конфигурации
+- Поддержка TypeScript через файл деклараций `abgrid-free.d.ts`
 
 Сторонние плагины и публичное подключение пользовательских плагинов в редакции FREE не поддерживаются. Штатные возможности FREE подключаются внутренним набором плагинов движка.
 
@@ -70,6 +71,35 @@ import ABGridVue from 'abgrid-engine-free/vue';
 ```
 
 React и Vue предоставляются приложением-потребителем как peer dependencies.
+
+## TypeScript
+
+ABGrid Engine FREE написан на JavaScript, но поставляется с декларацией типов TypeScript:
+
+```text
+types/abgrid-free.d.ts
+```
+
+Файл описывает публичную конфигурацию и API редакции FREE и позволяет TypeScript и IDE проверять конфигурацию до запуска приложения, а также предоставлять автодополнение и информацию о доступных параметрах.
+
+Пример:
+
+```ts
+const config: ABGridOptions = {
+    view: {
+        selection: {
+            enabled: true,
+            mode: "single"
+        }
+    }
+};
+
+const grid = new ABGrid(config);
+```
+
+При использовании TypeScript IDE может подсказать допустимые значения параметров и обнаружить ошибки конфигурации ещё до выполнения JavaScript.
+
+Файл `abgrid-free.d.ts` предназначен только для редакции FREE и описывает доступные в ней возможности.
 
 ## Редакция и версия
 
@@ -120,7 +150,8 @@ FREE uses the same core concepts and configuration approach as ABGrid Engine Ful
 - Summary values for the current page
 - HTTP/request API, interceptors, and 401 handling
 - Grid loading indicator
-- Configuration debug checks
+- Dev configuration checks
+- TypeScript support through the `abgrid-free.d.ts` declaration file
 
 Third-party plugins and the public registration of custom plugins are not supported in the FREE edition. FREE built-in features are installed through the engine’s internal plugin bundle.
 
@@ -162,6 +193,35 @@ import ABGridVue from 'abgrid-engine-free/vue';
 ```
 
 React and Vue are expected to be provided by the host application as peer dependencies.
+
+## TypeScript
+
+ABGrid Engine FREE is written in JavaScript and ships with a TypeScript declaration file:
+
+```text
+types/abgrid-free.d.ts
+```
+
+The declaration describes the public configuration and API available in the FREE edition. It enables TypeScript and IDEs to validate ABGrid configuration before runtime and provide code completion and information about available options.
+
+Example:
+
+```ts
+const config: ABGridOptions = {
+    view: {
+        selection: {
+            enabled: true,
+            mode: "single"
+        }
+    }
+};
+
+const grid = new ABGrid(config);
+```
+
+When TypeScript is used, the IDE can suggest valid option values and detect configuration errors before the JavaScript code is executed.
+
+The `abgrid-free.d.ts` file describes only the functionality available in the FREE edition.
 
 ## Edition and version
 
